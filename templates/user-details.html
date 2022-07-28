@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div>
+        <div>
+            <img src="{{user.image_url}}" alt="" id="user-image">
+        </div>
+
+        <div>
+            <h1>{{user.first_name}} {{user.last_name}}</h1>
+            <form action="/users/{{user.id}}/edit" method="GET">
+                <button type="submit" id="edit-button">Edit</button>
+            </form>
+            <form action="/users/{{user.id}}/delete" method="POST">
+                <button type="submit" id="delete-button">Delete user</button>
+            </form>
+        </div>
+
+        <a href="/users">Go back</a>
+
+
+    </div>
+</body>
+</html>

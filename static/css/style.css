@@ -1,0 +1,51 @@
+.input-field {
+    margin-bottom: 20px;
+}
+
+.input {
+    block-size: 20px;
+    inline-size: 300px;
+}
+
+.new-user-label {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#new-user-button {
+    background-color:rgb(13, 173, 13);
+    color:white;
+    block-size: 30px;
+    margin-bottom: 10px;
+}
+
+img {
+    max-height: 300px;
+}
+
+#edit-button {
+    background-color:rgb(13, 173, 13);
+    color:white;
+    block-size: 30px;
+    margin-bottom: 20px;
+}
+
+#delete-button {
+    background-color: red;
+    color:white;
+    block-size: 30px;
+    margin-bottom: 10px;
+}
+
+#confirm-button {
+    background-color:rgb(13, 173, 13);
+    color:white;
+    block-size: 30px;
+    margin-right: 10px;
+}
+
+a {
+    font-weight: bold;
+}
+
+
