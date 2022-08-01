@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit-post</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Edit Post</h1>
+    <form method="post">
+        <div>
+        <label for="title">Title</label>
+        <div class="input-field" id="title-field">
+            <input type="text" name="title" placeholder="{{post.title}}">
+        </div>
+        </div>
+
+        <label for="content">Content</label>
+        <div class="input-field">
+            <input type="text" name="content" placeholder="{{post.content}}" class="input">
+        </div>
+        <div>
+            <form>
+                <button formmethod="get" formaction="/posts/{{post.id}}">Cancel</button>
+                <button formmethod="post" formaction="/posts/{{post.id}}/edit">Edit</button>
+            </form>
+        </div>
+    </form>
+</body>
+</html>
