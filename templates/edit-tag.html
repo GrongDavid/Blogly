@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tag-form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Edit a tag</h1>
+    <form method="post">
+        <div>
+        <label for="name">Name</label>
+        <div class="input-field" id="name-field">
+            <input type="text" name="name" placeholder="Enter a name for the tag">
+        </div>
+        </div>
+
+        <div>
+            <button type="submit" id="add-button">Edit</button>
+            <a href="/tags">Go back</a>
+        </div>
+    </form>
+</body>
+</html>
